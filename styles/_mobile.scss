@@ -193,6 +193,10 @@
         margin-right: 10px;
     }
 
+    .icons-catalog {
+        top: 0;
+    }
+
     .icons img, .icons-catalog img, .cart__icons img {
         top: -215px;
     }
@@ -236,10 +240,10 @@
 
 @media (min-width: 220px) and (max-width: 768px) {
     .icons {
-        right: 6%;
+        right: 3%;
     }
     
     .icons img {
-        top: -13.5em;
+        top: -13em;
     }
 }

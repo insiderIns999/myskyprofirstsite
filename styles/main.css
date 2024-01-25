@@ -364,46 +364,28 @@ body {
   padding-bottom: 12px;
 }
 
-.icons {
-  display: inline-block;
-  margin-bottom: -25px;
+.icons, .icons-catalog {
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-right: 10px;
+  top: -15em;
 }
 
-.icons-catalog {
-  display: inline-block;
-  margin-bottom: -25px;
-  position: relative;
-}
-
-.icons img {
+.icons img, .icons-catalog img {
   width: 18.165px;
   height: 21.083px;
   position: relative;
-  top: -14.7em;
-}
-
-.icons-catalog img {
-  width: 18.165px;
-  height: 21.083px;
-  position: relative;
-  top: -22.5em;
 }
 
 .cart__img {
-  right: -19.3em;
+  margin-right: 10px;
 }
 
 .cart__img_catalog {
-  right: -19em;
-}
-
-.like__img {
-  right: -20em;
-}
-
-.like__img_catalog {
-  right: -20em;
+  margin-right: 10px;
 }
 
 .opis {
@@ -952,24 +934,20 @@ body {
     margin-top: 64px;
   }
 }
+@media (max-width: 833px) {
+  .icons, .icons-catalog {
+    top: -13.5em;
+  }
+  .icons {
+    top: 0;
+  }
+}
 @media (min-width: 768px) and (max-width: 833px) {
   .center {
     padding: 0 24px;
   }
-  .cart__img_catalog {
-    right: -285px;
-  }
-  .like__img_catalog {
-    right: -295px;
-  }
   .icons img {
     top: -220px;
-  }
-  .cart__img {
-    right: -280px;
-  }
-  .like__img {
-    right: -295px;
   }
   .cart__zag {
     font-size: 47px;
@@ -1138,6 +1116,9 @@ body {
     gap: 10px;
     margin-right: 10px;
   }
+  .icons-catalog {
+    top: 0;
+  }
   .icons img, .icons-catalog img, .cart__icons img {
     top: -215px;
   }
@@ -1172,9 +1153,9 @@ body {
 }
 @media (min-width: 220px) and (max-width: 768px) {
   .icons {
-    right: 6%;
+    right: 3%;
   }
   .icons img {
-    top: -13.5em;
+    top: -13em;
   }
 }/*# sourceMappingURL=main.css.map */
