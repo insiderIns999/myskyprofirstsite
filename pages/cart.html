@@ -12,8 +12,8 @@
 	<body>
 		<div class="top-cart center">
 			<header class="header">
-				<a class="logo" href="../index.html">
-					<img class="logo__image" src="../images/logo.svg" alt="logo" />
+				<a class="header__logo" href="../index.html">
+					<img class="header__image" src="../images/logo.svg" alt="logo" />
 				</a>
 				<form name="search" action="#" method="post">
 					<input class="header__input" type="search" name="text" placeholder="Поиск" />
@@ -21,10 +21,10 @@
 				<nav class="topmenu">
 					<ul>
 						<li>
-							<a class="menu__link" href="catalog.html">Каталог</a>
+							<a class="topmenu__link" href="catalog.html">Каталог</a>
 						</li>
 						<li>
-							<a class="menu__link" href="cart.html">Корзина</a>
+							<a class="topmenu__link" href="cart.html">Корзина</a>
 						</li>
 					</ul>
 				</nav>
@@ -63,142 +63,142 @@
 					</a>
 				</div>
 			</header>
-			<h1 class="top__h1">Корзина</h1>
+			<h1 class="top-cart__h1">Корзина</h1>
 		</div>
 		<section class="cart center cart__center">
 			<div class="cart__content">
-				<div class="cart__content__name-box">
+				<div class="cart__name-box">
 					<p>Товар</p>
-					<p>К-во</p>
+					<p class="cart__count">К-во</p>
 				</div>
-				<div class="cart__content__item">
-					<div class="cart__item__left">
-						<img src="../images/cart/product1.jpg" alt="Товар 1" />
-						<div class="cart__content__info">
-							<a class="prod-link" href="products/#">
-								<h4 class="cart__content__zag">Стол MENU</h4>
+				<div class="cart__item">
+					<div class="cart__left">
+						<img class="cart__image" src="../images/cart/product1.jpg" alt="Товар 1" />
+						<div class="cart__info">
+							<a class="cart__prod-link" href="products/#">
+								<h4 class="cart__zag">Стол MENU</h4>
 							</a>
 							<p class="cart__opis">Для того чтобы трапезничать было приятно, необходим правильный обеденный стол.</p>
 							<p class="cart__price">34 000 руб.</p>
 							<div class="cart__link-box">
-								<a class="cart__link-box__favorite" href="#">Избранные</a>
-								<a class="cart__link-box__delete" href="#">Удалить</a>
+								<a class="cart__link-box_favorite" href="#">Избранные</a>
+								<a class="cart__link-box_delete" href="#">Удалить</a>
 							</div>
 						</div>
 					</div>
-					<div class="count__products">
-						<input class="cart__item__number" type="number" name="number" value="1" min="1" />
-						<img class="count__arrow_up" src="../images/cart/arrow.svg" alt="Добавить количество" />
-						<img class="count__arrow_down" src="../images/cart/arrow.svg" alt="Убавить количество" />
+					<div class="count">
+						<input class="count__number" type="number" name="number" value="1" min="1" />
+						<img class="count__arrow-up" src="../images/cart/arrow.svg" alt="Добавить количество" />
+						<img class="count__arrow-down" src="../images/cart/arrow.svg" alt="Убавить количество" />
 					</div>
 				</div>
-				<div class="cart__content__item second">
-					<div class="cart__item__left">
-						<img src="../images/cart/product2.jpg" alt="Товар 2" />
-						<div class="cart__content__info">
-							<a class="prod-link" href="products/#">
-								<h4 class="cart__content__zag">Диван NASTAN</h4>
+				<div class="cart__item cart__item_second">
+					<div class="cart__left">
+						<img class="cart__image" src="../images/cart/product2.jpg" alt="Товар 2" />
+						<div class="cart__info">
+							<a class="cart__prod-link" href="products/#">
+								<h4 class="cart__zag">Диван NASTAN</h4>
 							</a>
 							<p class="cart__opis">Модель отличается простотой линий и форм, отсутствием броского декора.</p>
 							<p class="cart__price">80 000 руб.</p>
 							<div class="cart__link-box">
-								<a class="cart__link-box__favorite" href="#">Избранные</a>
-								<a class="cart__link-box__delete" href="#">Удалить</a>
+								<a class="cart__link-box_favorite" href="#">Избранные</a>
+								<a class="cart__link-box_delete" href="#">Удалить</a>
 							</div>
 						</div>
 					</div>
-					<div class="count__products">
-						<input class="cart__item__number" type="number" name="number" value="1" min="1" />
-						<img class="count__arrow_up" src="../images/cart/arrow.svg" alt="Добавить количество" />
-						<img class="count__arrow_down" src="../images/cart/arrow.svg" alt="Убавить количество" />
+					<div class="count">
+						<input class="count__number" type="number" name="number" value="1" min="1" />
+						<img class="count__arrow-up" src="../images/cart/arrow.svg" alt="Добавить количество" />
+						<img class="count__arrow-down" src="../images/cart/arrow.svg" alt="Убавить количество" />
 					</div>
 				</div>
 				<div class="cart__buttons">
-					<form name="cart__clear_continue" action="#" method="post">
-						<input class="buttons reset" type="reset" name="clear" value="Очистить корзину" />
-						<input class="buttons continue" type="submit" name="continue" value="Продолжить покупки" />
+					<form name="cart__clear-continue" action="#" method="post">
+						<input class="cart__button cart__button_reset" type="reset" name="clear" value="Очистить корзину" />
+						<input class="cart__button cart__button_continue" type="submit" name="continue" value="Продолжить покупки" />
 					</form>
 				</div>
 			</div>
-			<div class="cart__form">
-				<h3 class="cart_zag">Оформление заказа</h3>
-				<input class="buy_name form__input_text" type="text" name="name-surname" placeholder="Имя Фамилия" />
-				<input class="buy_tel form__input_text" type="tel" name="tel" placeholder="+ 7 904 000 80 80" />
-				<input class="buy_address form__input_text" type="text" name="address" placeholder="Адрес доставки" />
-				<p class="cart__result">Итого: <span class="cart__result-span">128 000 руб.</span></p>
-				<input class="end-oform bounce-in-top" type="submit" name="send" value="Оформить заказ" />
-				<span class="thank-you">Спасибо за заказ!</span>
-			</div>
+			<form class="cart__form form" name="cart" action="#" method="post">
+				<h3 class="cart__zag-form">Оформление заказа</h3>
+				<input class="form__name form__input_text form__input" type="text" name="name-surname" placeholder="Имя Фамилия" />
+				<input class="form__tel form__input_text form__input" type="tel" name="tel" placeholder="+ 7 904 000 80 80" />
+				<input class="form__address form__input_text" type="text" name="address" placeholder="Адрес доставки" />
+				<p class="form__result">Итого: <span class="form__result_span">128 000 руб.</span></p>
+				<input class="form__end-oform bounce-in-top" type="submit" name="send" value="Оформить заказ" />
+				<span class="form__thank-you">Спасибо за заказ!</span>
+			</form>
 		</section>
-		<section class="product__box cart__prod__box__mobile center">
-			<h2 class="cart__zag zag">Специальные предложения</h2>
-			<div class="product__content">
+		<section class="product-box cart__prod-box_mobile center">
+			<h2 class="cart__zag-box">Специальные предложения</h2>
+			<div class="product-content">
 				<div class="product">
 					<img class="product__img" src="../images/catalog/product1.jpg" alt="Товар 1" />
-					<div class="icons cart__icons">
-						<img class="cart__img cart-page__cart-img" src="../images/cart.png" alt="Добавить в корзину" />
-						<img class="like__img cart-page__like-img" src="../images/like.png" alt="Нравится" />
+					<div class="product__icons product__icons_cart">
+						<img class="product__cart-img product__cart-img_cart-page" src="../images/cart.png" alt="Добавить в корзину" />
+						<img class="product__like-img product__like-img_cart-page" src="../images/like.png" alt="Нравится" />
 					</div>
-					<a href="product.html" class="product__name">Кровать TATRAN</a>
-					<p class="opis">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
-					<div class="product__box-proce">
-						<p class="price">120 000 руб.</p>
-						<p class="old__price">140 000 руб.</p>
+					<a href="product.html" class="product__name product__name_martop">Кровать TATRAN</a>
+					<p class="product__opis">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
+					<div class="product__box-price">
+						<p class="product__price">120 000 руб.</p>
+						<p class="product__old-price">140 000 руб.</p>
 					</div>
 				</div>
 				<div class="product">
 					<img class="product__img" src="../images/catalog/product2.jpg" alt="Товар 2" />
 					<a href="product.html" class="product__name">Кресло VILORA</a>
-					<p class="opis">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань.</p>
-					<div class="product__box-proce">
-						<p class="price">21 000 руб.</p>
-						<p class="old__price">28 000 руб.</p>
+					<p class="product__opis">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань.</p>
+					<div class="product__box-price">
+						<p class="product__price">21 000 руб.</p>
+						<p class="product__old-price">28 000 руб.</p>
 					</div>
 				</div>
 				<div class="product">
 					<img class="product__img" src="../images/catalog/product3.jpg" alt="Товар 3" />
 					<a href="product.html" class="product__name">Стол MENU</a>
-					<p class="opis">Европейский дуб - отличается особой прочностью и стабильностью.</p>
-					<div class="product__box-proce">
-						<p class="price">34 000 руб.</p>
-						<p class="old__price">45 000 руб.</p>
+					<p class="product__opis">Европейский дуб - отличается особой прочностью и стабильностью.</p>
+					<div class="product__box-price">
+						<p class="product__price">34 000 руб.</p>
+						<p class="product__old-price">45 000 руб.</p>
 					</div>
 				</div>
 			</div>
 		</section>
-		<div class="bottom__link__catalog center">
-			<a class="undo__footer_content-link" href="catalog.html">Перейти в каталог</a>
+		<div class="bottom center">
+			<a class="bottom__catalog-link" href="catalog.html">Перейти в каталог</a>
 		</div>
 		<footer class="footer center">
 			<div class="footer__content footer-bg">
 				<img src="../images/footer_logo.svg" alt="Логотип компании" />
 			</div>
-			<div class="footer__content footer__box__menu">
-				<div class="footer__content__menu">
-					<h4 class="zag__bottom_menu">Меню</h4>
-					<ul class="menu__bottom">
+			<div class="footer__content footer-box">
+				<div class="footer__box-menu">
+					<h4 class="footer__zag">Меню</h4>
+					<ul class="footer__menu footmenu">
 						<li>
-							<a class="menu__bottom__link" href="../index.html">Главная</a>
+							<a class="footmenu__link" href="../index.html">Главная</a>
 						</li>
 						<li>
-							<a class="menu__bottom__link" href="catalog.html">Каталог</a>
+							<a class="footmenu__link" href="catalog.html">Каталог</a>
 						</li>
 						<li>
-							<a class="menu__bottom__link" href="cart.html">Корзина</a>
+							<a class="footmenu__link" href="cart.html">Корзина</a>
 						</li>
 					</ul>
 				</div>
-				<div class="footer__content__menu">
-					<h4 class="zag__bottom_menu">Контакты</h4>
-					<ul class="menu__bottom contacts">
+				<div class="footer__box-menu">
+					<h4 class="footer__zag">Контакты</h4>
+					<ul class="footer__menu footmenu contacts">
 						<li>
-							<a class="menu__bottom__link" href="tel:+79088008080">+7 908 800 80 80</a>
+							<a class="footmenu__link" href="tel:+79088008080">+7 908 800 80 80</a>
 						</li>
 						<li>
-							<a class="email menu__bottom__link" href="mailto:help@interier.com">help@interier.com</a>
+							<a class="footmenu__link footmenu__link_float" href="mailto:help@interier.com">help@interier.com</a>
 						</li>
 					</ul>
-					<ul class="ul__icons">
+					<ul class="footer__soc-icons">
 						<li>
 							<a href="http://instagram.com">
 								<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -239,8 +239,8 @@
 			</div>
 			<div class="footer__content footer__subscribe">
 				<form name="subscribe" action="#" method="post">
-					<p class="update">Получайте наши новости и обновления</p>
-					<input class="input__email" name="email" type="email" placeholder="Email Address" />
+					<p class="footer__update">Получайте наши новости и обновления</p>
+					<input class="footer__input-email" name="email" type="email" placeholder="Email Address" />
 					<button class="footer__btn bounce-top">Подписаться</button>
 				</form>
 			</div>

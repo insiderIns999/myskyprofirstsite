@@ -9,11 +9,11 @@
         } 
     }
 
-    .product__box {
+    .product-box {
         margin-top: 64px;
     }
 
-    .product__content {
+    .product-content {
         column-gap: 29px;
         row-gap: 39px;
     }
@@ -37,11 +37,11 @@
 }
 
 @media (max-width: 833px) {
-    .icons, .icons-catalog {
+    .product__icons, .product__icons-catalog {
         top: -13.5em;
     }
 
-    .icons {
+    .product__icons {
         top: 0;
     }
 }
@@ -51,8 +51,8 @@
         padding: 0 24px;
     }
 
-   .icons img {
-    top: -220px;
+   .product__icons img {
+        top: -220px;
    }
 
     .cart__zag {
@@ -65,5 +65,6 @@
 
     .footer {
         padding-top: 32px;
+        padding-bottom: 52px;
     }
 }

@@ -15,7 +15,7 @@ body {
 
 /*--------------ШАПКА сайта--------------*/
 
-.logo {
+.header__logo {
     text-decoration: none;
 }
 
@@ -26,6 +26,21 @@ body {
     background-size: cover;
     height: 735px;
 
+    &__content {
+        margin-top: 33px;
+
+        & p {
+            font-size: 24px;
+            line-height: 32px;
+            padding-bottom: 16px;
+        }
+
+        & a {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
     &__text {
         color: $colorText;
         line-height: 32px;
@@ -34,38 +49,27 @@ body {
         font-weight: normal;
         margin-bottom: 16px;
     }
-    
-    &__content {
-        margin-top: 33px;
-    
-        & p {
-            font-size: 24px;
-            line-height: 32px;
-            padding-bottom: 16px;
-        }
-    
-        & a {
-            font-size: 16px;
-            line-height: 24px;
-        }
 
-        .link {
-            color: $colorText;
-            line-height: 24px;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: normal;
-            text-decoration-line: underline;
-        }
+    &__link {
+        color: $colorText;
+        line-height: 24px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration-line: underline;
     }
 }
 
-.catalog__top {
+.catalog-top {
     background-image: url(../images/catalog/catalog-logo-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 400px;
+
+    &__content {
+        margin-top: 33px;
+    }
 }
 
 .header {
@@ -99,9 +103,7 @@ body {
     }
 }
 
-.header .logo,
-.header form,
-.header .menu {
+.header .header__logo, .header form, .header .topmenu {
     display: inline-flex;
 }
 
@@ -116,7 +118,7 @@ body {
     }
 }
 
-.menu__link {
+.topmenu__link {
     color: $colorText;
     font-style: normal;
     font-weight: normal;
@@ -125,7 +127,7 @@ body {
     text-decoration: none;
 }
 
-.menu__link:hover {
+.topmenu__link:hover {
     text-decoration: underline;
 }
 
@@ -133,7 +135,8 @@ body {
     display: none;
 }
 
-.title {
+.top__title,
+.catalog-top__title {
     color: $colorText;
     line-height: 70px;
     font-size: 64px;
@@ -230,11 +233,11 @@ body {
     width: 100%;
 }
 
-.product__box {
+.product-box {
     padding-top: 64px;
 }
 
-.catalog__content_header {
+.product-box__top {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -242,25 +245,25 @@ body {
     align-items: center;
 }
 
-.bread-crumbs ul {
+.product-box__bread-crumbs ul {
     list-style-type: none;
 }
 
-.bread-crumbs ul li {
+.product-box__bread-crumbs ul li {
     float: left;
     padding-right: 10px;
 }
 
-.bread-crumbs ul li::after {
+.product-box__bread-crumbs ul li::after {
     content: "/";
     padding-left: 10px;
 }
 
-.bread-crumbs ul li:last-child::after {
+.product-box__bread-crumbs ul li:last-child::after {
     content: none;
 }
 
-.bread-crumbs ul li a {
+.product-box__bread-crumbs ul li a {
     color: #000;
     font-size: 16px;
     font-style: normal;
@@ -269,11 +272,11 @@ body {
     text-decoration: none;
 }
 
-.bread-crumbs ul li a:hover {
+.product-box__bread-crumbs ul li a:hover {
     text-decoration: underline;
 }
 
-.sorting-select {
+.product-box__sorting-select {
     border-radius: 20px;
     border: 1px solid #C4C4C4;
     color: #000;
@@ -294,7 +297,7 @@ body {
     appearance: none;
 }
 
-.sort__op {
+.product-box__sort-op {
     display: block;
     color: #000;
     font-size: 16px;
@@ -304,7 +307,7 @@ body {
     padding-left: 14px;
 }
 
-.product__content {
+.product-content {
     display: flex;
     flex-wrap: wrap;
     column-gap: 32px;
@@ -312,7 +315,12 @@ body {
     row-gap: 56px;
 }
 
-.zag {
+.product-content_mar {
+    margin: 32px 0 0 0;
+}
+
+.for-box__zag,
+.product-zag, .cart__zag-box {
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
@@ -320,7 +328,7 @@ body {
     color: #000000;
 }
 
-.product__box-proce {
+.product__box-price {
     display: flex;
     gap: 32px;
 }
@@ -336,16 +344,20 @@ body {
     text-decoration: none;
 }
 
-.opis {
+.product__name_martop {
+    margin-top: -10px;
+}
+
+.product__opis {
     color: #888;
     font-size: 14px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     line-height: 17px;
     margin-bottom: 12px;
 }
 
-.price {
+.product__price {
     color: #050505;
     font-size: 24px;
     font-style: normal;
@@ -353,7 +365,7 @@ body {
     line-height: normal;
 }
 
-.old__price {
+.product__old-price {
     color: #888;
     font-size: 24px;
     font-style: normal;
@@ -362,14 +374,8 @@ body {
     text-decoration-line: line-through;
 }
 
-.product__box .top__text {
-    font-size: 14px;
-    line-height: 17px;
-    color: #888888;
-    padding-bottom: 12px;
-}
-
-.icons, .icons-catalog {
+.product__icons,
+.product__icons-catalog {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -379,49 +385,26 @@ body {
     top: -15em;
 }
 
-.icons img, .icons-catalog img {
+.product__icons img,
+.product__icons-catalog img {
     width: 18.165px;
     height: 21.083px;
     position: relative;
 }
 
-.cart__img {
+.product__cart-img {
     margin-right: 10px;
 }
 
-.cart__img_catalog {
+.product__cartimg-catalog {
     margin-right: 10px;
 }
 
-.opis {
-    color: #888;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.product__box .p2,
-.product__box .p3 {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-}
-
-.product__box .p2 {
-    color: #050505;
-}
-
-.product__box .p3 {
-    text-decoration-line: line-through;
-    color: #888888;
-}
-
-.bottom__link__catalog {
+.bottom {
     transition: all 1.3s;
 }
 
-.undo__footer_content-link {
+.bottom__catalog-link {
     color: #000;
     display: inline-block;
     font-size: 16px;
@@ -431,7 +414,7 @@ body {
     text-decoration: underline;
 }
 
-.undo__footer_content-link:hover {
+.bottom__catalog-link:hover {
     color: #888;
     text-decoration: none;
 }
@@ -449,7 +432,7 @@ body {
     padding-bottom: 24px;
 }
 
-.footer__box__menu {
+.footer-box {
     column-gap: 110px;
     display: flex;
     flex-direction: row;
@@ -458,11 +441,11 @@ body {
     justify-content: space-between;
 }
 
-.menu__bottom {
+.footer__menu {
     list-style-type: none;
 }
 
-.menu__bottom__link {
+.footmenu__link {
     color: #888;
     float: left;
     display: block;
@@ -471,15 +454,15 @@ body {
     text-decoration: none;
 }
 
-.menu__bottom__link:hover {
+.footmenu__link:hover {
     text-decoration: underline;
 }
 
-.email {
+.footmenu__link_float {
     float: none;
 }
 
-.ul__icons {
+.footer__soc-icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -488,14 +471,18 @@ body {
     width: 122px;
 }
 
-.ul__icons a svg:hover path {
+.footer__soc-icons a svg:hover path {
     fill: #000;
     transition: 1.05s;
 }
 
-.ul__icons a svg:not(:hover) path {
+.footer__soc-icons a svg:not(:hover) path {
     fill: #888;
     transition: 1.05s;
+}
+
+.product__name_margin {
+    margin-top: -10px;
 }
 
 .footer h4 {
@@ -507,15 +494,16 @@ body {
     padding-bottom: 12px;
 }
 
-.footer form p {
+.footer__update {
     color: #000000;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding-bottom: 16px;
 }
 
-.footer form input[type=email] {
+.footer__input-email {
     background: $colorText;
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
@@ -532,22 +520,18 @@ body {
     padding-right: 24px;
 }
 
-.input__email::placeholder {
+.footer__input-email::placeholder {
     color: #C4C4C4;
 }
 
-.input__email,
+.footer__input-email,
 .footer__btn {
     width: 100%;
 }
 
-.footer .update {
-    padding-bottom: 16px;
-}
-
-.footer form button {
-    background: rgba(222, 215, 215, 0.41);
-    border: 1px solid $colorText;
+.footer__btn {
+    background-color: rgba(222, 215, 215, 0.41);
+    border: 1px solid #fff;
     box-sizing: border-box;
     border-radius: 20px;
     display: block;
@@ -566,7 +550,7 @@ body {
 }
 
 .footer__btn:not(:hover) {
-    background-color: #fff;
+    background-color: rgba(222, 215, 215, 0.41);
     color: #000;
     transition: 1.03s;
 }

@@ -10,10 +10,10 @@
 		<link rel="stylesheet" type="text/css" href="../styles/main.css" />
 	</head>
 	<body>
-		<div class="catalog__top center">
+		<div class="catalog-top center">
 			<header class="header">
-				<a class="logo" href="../index.html">
-					<img class="logo__image" src="../images/catalog/catalog-logo.svg" alt="logo" />
+				<a class="header__logo" href="../index.html">
+					<img class="header__image" src="../images/catalog/catalog-logo.svg" alt="logo" />
 				</a>
 				<form name="search" action="#" method="post">
 					<input class="header__input" type="search" name="text" placeholder="Поиск" />
@@ -21,10 +21,10 @@
 				<nav class="topmenu">
 					<ul>
 						<li>
-							<a class="menu__link" href="catalog.html">Каталог</a>
+							<a class="topmenu__link" href="catalog.html">Каталог</a>
 						</li>
 						<li>
-							<a class="menu__link" href="cart.html">Корзина</a>
+							<a class="topmenu__link" href="cart.html">Корзина</a>
 						</li>
 					</ul>
 				</nav>
@@ -63,13 +63,13 @@
 					</a>
 				</div>
 			</header>	
-			<div class="top__content">
-				<h1 class="title">Каталог</h1>
+			<div class="catalog-top__content">
+				<h1 class="catalog-top__title">Каталог</h1>
 			</div>
 		</div>
-		<div class="product__box center product__list">
-			<div class="catalog__content_header">
-				<div class="bread-crumbs">
+		<div class="product-box center product-list">
+			<div class="product-box__top">
+				<div class="product-box__bread-crumbs">
 					<ul>
 						<li>
 							<a href="../index.html">Главная</a>
@@ -79,150 +79,150 @@
 						</li>
 					</ul>
 				</div>
-				<div class="sorting-order">
+				<div class="product-box__sorting-order">
 					<form name="sort" action="#" method="post">
-						<select class="sorting-select">
-							<option selected class="sort__op">Порядок: сперва новые</option>
+						<select class="product-box__sorting-select">
+							<option selected class="product-box__sort-op">Порядок: сперва новые</option>
 						</select>
 					</form>
 				</div>
 			</div>
-			<div class="product__content">
+			<div class="product-content">
 				<div class="product">
 					<img class="product__img" src="../images/catalog/product1.jpg" alt="Товар 1" />
-					<div class="icons-catalog">
-						<img class="cart__img_catalog" src="../images/cart.png" alt="Добавить в корзину" />
-						<img class="like__img_catalog" src="../images/like.png" alt="Нравится" />
+					<div class="product__icons-catalog">
+						<img class="product__cartimg-catalog" src="../images/cart.png" alt="Добавить в корзину" />
+						<img class="product__likeimg-catalog" src="../images/like.png" alt="Нравится" />
 					</div>
-					<a href="product.html" class="product__name">Кровать TATRAN</a>
-					<p class="opis">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
-					<div class="product__box-proce">
-						<p class="price">120 000 руб.</p>
+					<a href="product.html" class="product__name product__name_margin">Кровать TATRAN</a>
+					<p class="product__opis">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
+					<div class="product__box-price">
+						<p class="product__price">120 000 руб.</p>
 					</div>
 				</div>
 				<div class="product">
 					<img class="product__img" src="../images/catalog/product2.jpg" alt="Товар 2" />
 					<a href="pages/product.html" class="product__name">Кресло VILORA</a>
-					<p class="opis">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань.</p>
-					<div class="product__box-proce">
-						<p class="price">21 000 руб.</p>
+					<p class="product__opis">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань.</p>
+					<div class="product__box-price">
+						<p class="product__price">21 000 руб.</p>
 					</div>
 				</div>
 				<div class="product">
 					<img class="product__img" src="../images/catalog/product3.jpg" alt="Товар 3" />
 					<a href="product.html" class="product__name">Стол MENU</a>
-					<p class="opis">Для того чтобы трапезничать было приятно, необходим правильный обеденный стол.</p>
-					<div class="product__box-proce">
-						<p class="price">34 000 руб.</p>
+					<p class="product__opis">Для того чтобы трапезничать было приятно, необходим правильный обеденный стол.</p>
+					<div class="product__box-price">
+						<p class="product__price">34 000 руб.</p>
 					</div>
 				</div>
 				<div class="product">
 					<img class="product__img" src="../images/catalog/product4.jpg" alt="Товар 4" />
 					<a href="product.html" class="product__name">Диван ASKESTA</a>
-					<p class="opis">Благодаря защелкивающемуся механизму диван легко раскладывается в комфортную кровать</p>
-					<div class="product__box-proce">
-						<p class="price">68 000 руб.</p>
+					<p class="product__opis">Благодаря защелкивающемуся механизму диван легко раскладывается в комфортную кровать</p>
+					<div class="product__box-price">
+						<p class="product__price">68 000 руб.</p>
 					</div>
 				</div>
 				<div class="product">
 					<img class="product__img" src="../images/catalog/product5.jpg" alt="Товар 5" />
 					<a href="product.html" class="product__name">Кресло LUNAR</a>
-					<p class="opis">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки</p>
-					<div class="product__box-proce">
-						<p class="price">40 000 руб.</p>
+					<p class="product__opis">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки</p>
+					<div class="product__box-price">
+						<p class="product__price">40 000 руб.</p>
 					</div>
 				</div>
 				<div class="product">
 					<img class="product__img" src="../images/catalog/product6.jpg" alt="Товар 6" />
 					<a href="product.html" class="product__name">Шкаф NASTAN</a>
-					<p class="opis">Мебель может быть оснащена разнообразными системами подсветки.</p>
-					<div class="product__box-proce">
-						<p class="price">80 000 руб.</p>
+					<p class="product__opis">Мебель может быть оснащена разнообразными системами подсветки.</p>
+					<div class="product__box-price">
+						<p class="product__price">80 000 руб.</p>
 					</div>
 				</div>
 				<div class="product">
 					<img class="product__img" src="../images/catalog/product1.jpg" alt="Товар 1" />
 					<a href="product.html" class="product__name">Кровать TATRAN</a>
-					<p class="opis">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
-					<div class="product__box-proce">
-						<p class="price">120 000 руб.</p>
+					<p class="product__opis">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
+					<div class="product__box-price">
+						<p class="product__price">120 000 руб.</p>
 					</div>
 				</div>
 				<div class="product">
 					<img class="product__img" src="../images/catalog/product2.jpg" alt="Товар 2" />
 					<a href="pages/product.html" class="product__name">Кресло VILORA</a>
-					<p class="opis">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань.</p>
-					<div class="product__box-proce">
-						<p class="price">21 000 руб.</p>
+					<p class="product__opis">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань.</p>
+					<div class="product__box-price">
+						<p class="product__price">21 000 руб.</p>
 					</div>
 				</div>
 				<div class="product">
 					<img class="product__img" src="../images/catalog/product3.jpg" alt="Товар 3" />
 					<a href="product.html" class="product__name">Стол MENU</a>
-					<p class="opis">Для того чтобы трапезничать было приятно, необходим правильный обеденный стол.</p>
-					<div class="product__box-proce">
-						<p class="price">34 000 руб.</p>
+					<p class="product__opis">Для того чтобы трапезничать было приятно, необходим правильный обеденный стол.</p>
+					<div class="product__box-price">
+						<p class="product__price">34 000 руб.</p>
 					</div>
 				</div>
 				<div class="product">
 					<img class="product__img" src="../images/catalog/product4.jpg" alt="Товар 4" />
 					<a href="product.html" class="product__name">Диван ASKESTA</a>
-					<p class="opis">Благодаря защелкивающемуся механизму диван легко раскладывается в комфортную кровать</p>
-					<div class="product__box-proce">
-						<p class="price">68 000 руб.</p>
+					<p class="product__opis">Благодаря защелкивающемуся механизму диван легко раскладывается в комфортную кровать</p>
+					<div class="product__box-price">
+						<p class="product__price">68 000 руб.</p>
 					</div>
 				</div>
 				<div class="product">
 					<img class="product__img" src="../images/catalog/product5.jpg" alt="Товар 5" />
 					<a href="product.html" class="product__name">Кресло LUNAR</a>
-					<p class="opis">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки</p>
-					<div class="product__box-proce">
-						<p class="price">40 000 руб.</p>
+					<p class="product__opis">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки</p>
+					<div class="product__box-price">
+						<p class="product__price">40 000 руб.</p>
 					</div>
 				</div>
 				<div class="product">
 					<img class="product__img" src="../images/catalog/product6.jpg" alt="Товар 6" />
 					<a href="product.html" class="product__name">Шкаф NASTAN</a>
-					<p class="opis">Мебель может быть оснащена разнообразными системами подсветки.</p>
-					<div class="product__box-proce">
-						<p class="price">80 000 руб.</p>
+					<p class="product__opis">Мебель может быть оснащена разнообразными системами подсветки.</p>
+					<div class="product__box-price">
+						<p class="product__price">80 000 руб.</p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="bottom__link__catalog center">
-			<a class="undo__footer_content-link" href="#">Показать еще</a>
+		<div class="bottom center">
+			<a class="bottom__catalog-link" href="#">Показать еще</a>
 		</div>
 		<footer class="footer center">
 			<div class="footer__content footer-bg">
 				<img src="../images/catalog/catalog_footer_logo.svg" alt="Логотип компании" />
 			</div>
-			<div class="footer__content footer__box__menu">
-				<div class="footer__content__menu">
-					<h4 class="zag__bottom_menu">Меню</h4>
-					<ul class="menu__bottom">
+			<div class="footer__content footer-box">
+				<div class="footer__box-menu">
+					<h4 class="footer__zag">Меню</h4>
+					<ul class="footer__menu footmenu">
 						<li>
-							<a class="menu__bottom__link" href="index.html">Главная</a>
+							<a class="footmenu__link" href="index.html">Главная</a>
 						</li>
 						<li>
-							<a class="menu__bottom__link" href="pages/catalog.html">Каталог</a>
+							<a class="footmenu__link" href="pages/catalog.html">Каталог</a>
 						</li>
 						<li>
-							<a class="menu__bottom__link" href="pages/cart.html">Корзина</a>
+							<a class="footmenu__link" href="pages/cart.html">Корзина</a>
 						</li>
 					</ul>
 				</div>
-				<div class="footer__content__menu">
-					<h4 class="zag__bottom_menu">Контакты</h4>
-					<ul class="menu__bottom contacts">
+				<div class="footer__box-menu">
+					<h4 class="footer__zag">Контакты</h4>
+					<ul class="footer__menu footmenu contacts">
 						<li>
-							<a class="menu__bottom__link" href="tel:+79088008080">+7 908 800 80 80</a>
+							<a class="footmenu__link" href="tel:+79088008080">+7 908 800 80 80</a>
 						</li>
 						<li>
-							<a class="email menu__bottom__link" href="mailto:help@interier.com">help@interier.com</a>
+							<a class="footmenu__link footmenu__link_float" href="mailto:help@interier.com">help@interier.com</a>
 						</li>
 					</ul>
-					<ul class="ul__icons">
+					<ul class="footer__soc-icons">
 						<li>
 							<a href="http://instagram.com">
 								<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -263,8 +263,8 @@
 			</div>
 			<div class="footer__content footer__subscribe">
 				<form name="subscribe" action="#" method="post">
-					<p class="update">Получайте наши новости и обновления</p>
-					<input class="input__email" name="email" type="email" placeholder="Email Address" />
+					<p class="footer__update">Получайте наши новости и обновления</p>
+					<input class="footer__input-email" name="email" type="email" placeholder="Email Address" />
 					<button class="footer__btn scale-up-center">Подписаться</button>
 				</form>
 			</div>
